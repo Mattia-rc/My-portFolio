@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+      background-color: #0e0f14;
+}
+
+.navbar_main{
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(212,137,183,1) 100%);
+}
+.navbar_main ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;   
+    list-style: none;
+    width: 40%;
+    margin: auto;
+}
+
+.navbar_main ul a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar_main ul a:hover{
+
+    color: #1446D4;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    
+
+}
+
+
+.textos__izquierda{
+    margin-top: 10%;
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+.textos__izquierda h1{
+    color: #fff;
+    font-size: 65px;
+}
+
+.textos__izquierda h2{
+    font-size: 25px;
+    color:  #10BEFF;
+}
+
+
+.img__derecha{
+    margin-right:10%;
+    
+}
+
+.img__derecha img{
+    border-radius: 30px;
+    border: 3px solid  #10BEFF;
+}
+
+.boton__main{
+    margin-top: 50px;
+    text-align: center;
+    
+
+}
+
+.boton__main a{
+    background-color: #10BEFF;
+
+    border-radius: 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+    
+}
+
+
+
+.texto__Nosotros{
+    margin-top: 70px;
+    margin-left: 90px;
+    font-size: 50px;
+}
+.texto__Nosotros h1{
+    color: #fff;
+    font-size: 30px;
+}
+
+.texto__Nosotros h2{
+    padding-top: 3%;
+    font-size: 20px;
+    width: 70%;
+    color: #fff;
+
+    
+}
+
+
+
+.img__main {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    padding-top: 10%;
+   
+}
+
+.img__main img{
+    border: 3px solid #fff;
+    height: 200px;
+    width: 160px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+   .formulario{
+    padding-top: 5%;
+    
+   }
+   .div__main{
+    border: 3px solid  #10BEFF;
+    width: 80%;
+    border-radius: 20px;
+    background: rgb(27, 27, 27);
+    margin: auto;
+   }
+   .letrasContacto{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+   }
+
+.formulario input{
+    display: block;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin: auto;
+    padding-top: 10px;
+ 
+    
+}
+input{
+    padding-top: 30px;
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #0e0f14;
+}
+p{
+    padding-top:70px;
+}
+
+
+.boton__mainContact{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.boton__mainContact a{
+    
+  background-color: #10BEFF;
+
+    border-radius: 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+}
+
+
+
+a{
+    color:  #10BEFF;
+    
+}
+
+@media (max-width: 1250px){
+    .img__derecha img{
+        height: 400px;
+    }
+
+   
+
+}
+
+
+@media(max-width: 1100px){
+    .textos__izquierda h1{
+        font-size: 50px;
+    }
+
+    .textos__izquierda{
+        padding-bottom: 50px;
+    }
+   
+}
+
+
+@media (max-width: 975px){
+  .textos__izquierda{
+    margin-left: 0px;
+    display: block;
+    text-align: center;
+  
+}
+
+
+
+  .img__derecha{
+    margin-top: 30px;
+    text-align: center;
+    margin-right: 0px;
+  }
+
+}
+
+@media (max-width: 900px){
+    .texto__Nosotros h2{
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 767px){
+   .navbar_main ul{
+    width: 60%;
+   }
+}
+@media (max-width){
+    .texto__Nosotros h2{
+        width: 70%;
+    }
+}
+
+@media (max-width: 617px){
+    .textos__izquierda h1{
+        font-size: 30px;
+    }
+    .img__derecha img{
+        height: 350px;
+    }
+
+}
+
+
+@media (max-width: 555px){
+    .navbar_main ul{
+        width: 70%;
+    }
+    
+}
+@media (max-width: 530px){
+.texto__Nosotros h2{
+    width: 90%;
+    font-size: 20px;
+}
+
+}
+
+@media (max-width: 526px){
+   
+    
+}
+
+@media (max-width: 470px){
+    .navbar_main ul{
+        width: 80%;
+    }
+
+    .texto__Nosotros h2{
+        width: 70%;
+    }
+}
+
+@media (max-width: 420px){
+    .texto__Nosotros h2{
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 395px){
+    .textos__izquierda{
+        padding-top: 70px;
+    }
+    .texto__Nosotros h2{
+        width: 80%;
+    }
+    
+    .navbar_main ul{
+        width: 90%;
+    }
+}
+
+
