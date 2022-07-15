@@ -40,30 +40,55 @@
         <h1 class="animate__animated animate__fadeInLeftBig">Contacto</h1>
     </div>
     
-    <form class="formulario animate__animated animate__fadeInRight animate__delay-1s">
+    <form id="form" action="" class="formulario animate__animated animate__fadeInRight animate__delay-1s">
         <div class="div__main">
         <div  class="animate__animated animate__fadeInRight animate__delay-2s" > 
-            <p class="letrasContacto">Email</p>
-            <input type="email" id="name" placeholder="Ingrese su correo" required>
+            <label for="name"><p  class="text__input">Nombre Completo</p></label>
+            <input name="name" type="text" id="name" required placeholder="Ingrese su nombre">
         </div>
         <div class="animate__animated animate__fadeInRight animate__delay-2s" >
-            <p class="letrasContacto">Asunto</p>
-            <input type="text" placeholder="Ingrese el asunto">
+            <label for="email"><p class="text__input">Correo Electronico</p></label>
+            <input name="email" type="text" id="email" required placeholder="Ingrese su correo electronico">
         </div>
             <div class="animate__animated animate__fadeInRight animate__delay-2s" >
-                <p class="letrasContacto">Mensaje</p>
-                <input type="text" placeholder="Ingrese el mensaje" required>
+                <label for="message"><p class="text__input">Mensaje</p></label>
+                <input name="message" type="text" placeholder="Ingrese el mensaje" required>
             </div>
-            <div class="boton__mainContact animate__animated animate__fadeInRight animate__delay-2s">
-               <a href="#">Enviar</a>
+            <div class="boton__mainContact animate__animated animate__fadeInRight animate__delay-2s" >
+            <input type="submit" value="Enviar" class="boton__mainContact" >
             </div>
         </div>
-      
-     
-
-
+        <a href="mailto:@matutebagni@gmail.com" id="trucazo">mail</a>
     </form>
 
 
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
 </body>
+
+<script>
+    const $form = document.querySelector('#form');
+    const $buttonMailto = document.querySelector('#trucazo');
+    $form.addEventListener('submit', handleSubmit)
+
+    function handleSubmit(event){
+        event.preventDefault();
+       const form =   new FormData(this)
+        console.log(form.get('name'));
+        $buttonMailto.setAttribute('href', `mailto:matutebagni@gmail.com?subjet=${form.get('name')}${form.get('email')}&body=${form.get('message')}`)
+        $buttonMailto.click()
+    }
+</script>
 </html>
