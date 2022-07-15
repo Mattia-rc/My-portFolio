@@ -318,4 +318,10 @@ a{
     }
 }
 
+@media (max-width: 359px){
+    .boton__mainContact input{
+        font-size: 15px;
+    }
+}
+
 
